@@ -25,4 +25,5 @@ public class User {
         this.login = login;
         this.password = password;
     }
+
 }

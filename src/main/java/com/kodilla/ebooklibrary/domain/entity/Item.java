@@ -5,7 +5,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import com.kodilla.ebooklibrary.domain.dto.ItemStatus;
-import org.apache.catalina.User;
 
 import java.time.LocalDate;
 import javax.persistence.*;
