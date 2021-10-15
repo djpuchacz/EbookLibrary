@@ -21,6 +21,9 @@ dependencies {
 //  compile('mysql:mysql-connector-java')
     compile('org.postgresql:postgresql')
 
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    testCompile group: 'junit', name: 'junit', version: '5.3'
+
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }

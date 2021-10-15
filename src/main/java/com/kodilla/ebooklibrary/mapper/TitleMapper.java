@@ -21,6 +21,7 @@ public class TitleMapper {
     @Autowired
     private TitleService titleService;
 
+
     public Title mapToTitle(CreateTitleDto createTitleDto) throws Exception {
         Optional<User> user = userService.getUserById(createTitleDto.getUserId());
         if (!user.isPresent())
@@ -31,6 +32,7 @@ public class TitleMapper {
                 createTitleDto.getTitle(),
                 createTitleDto.getYear());
     }
+
 
     public List<TitleDto> mapToTitleDtoList(List<Title> titles) {
         return titles.stream()
