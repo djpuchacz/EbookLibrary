@@ -28,7 +28,7 @@ public class HappyPathTests {
         //funkcjonalność dodawania tytułu „Add new”
         WebElement addNewTitle = driver.findElement(By.id("add-title-button"));
         addNewTitle.click();
-        ////wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("f//*[@id=\"titles\"]/div/div/form")));
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("f//*[@id=\"titles\"]/div/div/form")));
         WebElement addNewTitleField = driver.findElement(By.name("title"));
         addNewTitleField.sendKeys("Diamonds Are Forever");
 
@@ -50,7 +50,7 @@ public class HappyPathTests {
         showCopies.click();
 
         //funkcjonalność zobaczenia historii wypozyczeń („SHOW HISTORY”)
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("title-copies")));
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("title-copies")));
         WebElement showHistory = driver.findElement(By.cssSelector("#item-41715 > div.items-list__item__actions.list__item__actions > a > button"));
         showHistory.click();
 
