@@ -1,5 +1,7 @@
 package com.kodilla.ebooklibrary;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,12 +11,16 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HappyPathTests {
+    WebDriver driver;
+    @Before
+    public void setUp() {
+        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.get("https://ta-ebookrental-fe.herokuapp.com/login");
+    }
     @Test
     public void happyPath() {
         //ekran logowania poprawne dane
-        System.setProperty("webdriver.chrome.driver", "C:\\selenium-drivers\\Chrome\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://ta-ebookrental-fe.herokuapp.com/login");
 
         WebElement rightLogin = driver.findElement(By.name("login"));
         rightLogin.sendKeys(""); //login on demand
@@ -56,5 +62,10 @@ public class HappyPathTests {
         WebElement showHistory = driver.findElement(By.cssSelector("#item-41715 > div.items-list__item__actions.list__item__actions > a > button"));
         showHistory.click();
 
+    }
+
+    @After
+    public void tearDown() {
+        driver.quit();
     }
 }
