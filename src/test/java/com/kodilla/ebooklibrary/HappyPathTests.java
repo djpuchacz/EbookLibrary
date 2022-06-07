@@ -23,10 +23,10 @@ public class HappyPathTests {
         //ekran logowania poprawne dane
 
         WebElement rightLogin = driver.findElement(By.name("login"));
-        rightLogin.sendKeys("demo85"); //login on demand
+        rightLogin.sendKeys(""); //login on demand
 
         WebElement rightPassword = driver.findElement(By.name("password"));
-        rightPassword.sendKeys("demo85"); //pass on demand
+        rightPassword.sendKeys(""); //pass on demand
         rightPassword.submit();
 
         WebDriverWait wait = new WebDriverWait(driver, 10);
