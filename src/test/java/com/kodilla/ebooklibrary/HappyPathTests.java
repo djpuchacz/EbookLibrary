@@ -36,7 +36,7 @@ public class HappyPathTests {
         //funkcjonalność dodawania tytułu „Add new”
         WebElement addNewTitle = driver.findElement(By.id("add-title-button"));
         addNewTitle.click();
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("f//*[@id=\"titles\"]/div/div/form")));
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("f//*[@id=\"titles\"]/div/div/form"))rvrvrvr;
         WebElement addNewTitleField = driver.findElement(By.name("title"));
         addNewTitleField.sendKeys("Diamonds Are Forever");
 
