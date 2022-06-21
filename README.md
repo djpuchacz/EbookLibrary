@@ -1,6 +1,6 @@
 # EbookLibrary
 Testy automatyczne dla backendu i frontendu tworzonej właśnie prostej aplikacji wypożyczalni eBooków. 
-Testy backendu (endpointy API) zrealizowane przy pomocy Postman'a i wypushowane do repo w pliku .json (kolekcja Postman'a).
+Testy backendu (endpointy API) zrealizowane przy pomocy Postman'a i wypushowane do repo w pliku .json (kolekcja Postman'a). Aktualnie w trakcie przenoszenia do RestAssured.
 
 Aplikacja jest dostępna tutaj: https://ta-ebookrental-fe.herokuapp.com
 Tworzona aplikacja ma za zadanie realizować następującą funkcjonalność:
